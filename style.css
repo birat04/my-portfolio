@@ -916,7 +916,118 @@ img {
     .nav_toggle{
         display: none;
     }
+    .nav_list{
+        display: flex;
+        column-gap: 2rem;
+    }
+    .nav_menu{
+        margin-left: auto;
+    }
+    .change-theme{
+        margin: 0;
+    }
+    .home_container{
+        row-gap: 5rem;
+    }
+    .home_content{
+        padding-top: 5.5rem;
+        column-gap: 2rem;
+    }
+    .home_data{
+        grid-column:6rem;
+        margin-left: auto;
+    }
+    .home_blob{
+        width: 270px;
+    }
+    .home_scroll{
+        display: block;
+    }
+    .about_container{
+        column-gap: 5rem;
+    }
+    .about_img{
+        width: 250px;
+    }
+    .about_description{
+        text-align: initial;
+    }
+    .about_info{
+        justify-content: space-between;
+    }
+    .about_buttons{
+        justify-content: initial;
+    }
+    .qualification_tabs{
+        justify-content: center;
+    }
+    .qualification_button{
+        margin: 0 var(--mb-1);
+    }
+    .qualification_sections{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .services_container{
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+    .services_icon{
+        font-size: 2rem;
+    }
+    .services_content{
+        padding: 6rem 0 2rem 2.5rem;
+    }
+    .portfolio_img{
+        width: 320px;
+    }
+    .portfolio_content{
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer_links{
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+    .footer_socials{
+        justify-content: flex-end;
+    }
 }
+
+@media  screen and (min-width:1024px) {
+    .header,
+    .main,
+    .footer_container{
+        padding: 0 2rem;
+    }
+    .home_blob{
+        width: 320px;
+    }
+    .home_social{
+        transform: translateX(-6rem);
+    }
+    .services_container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .portfolio_content{
+        column-gap: 15rem;
+    }
+    .contact_form{
+        width: 460px;
+    }
+    .contact_inputs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+
+    
+
         
         
    

@@ -1,12 +1,6 @@
-
 const navMenu = document.getElementById("nav_menu");
 const navToggle = document.getElementById("nav_toggle");
-
-const navClose = document.getElementById("nav)close");
-
-
-
-
+const navClose = document.getElementById("nav_close");
 
 if (navToggle) {
     navToggle.addEventListener("click", () => {
@@ -14,29 +8,27 @@ if (navToggle) {
     });
 }
 
-
 if (navClose) {
     navClose.addEventListener("click", () => {
         navMenu.classList.remove("show-menu");
     });
 }
 
+const skillsContent = document.getElementsByClassName("skills_content");
+const skillsHeader = document.querySelectorAll(".skills_header");
 
+function toggleSkills() {
+    let itemClass = this.parentNode.className;
 
-const navLinks = document.querySelectorAll(".nav_link");
+    for (i = 0; i < skillsContent.length; i++) {
+        skillsContent[i].className = "skills_content skills_close";
+    }
 
-function linkAction() {
-    navLinks.forEach((link) => link.classList.remove("active-link"));
-    this.classList.add("active-link");
+    if (itemClass === "skills_content skills_close") {
+        this.parentNode.className = "skills_content skills_open";
+    }
 }
 
-navLinks.forEach((link) => link.addEventListener("click", linkAction));
-
-const navLink = document.querySelectorAll('.nav__link')
-
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    
-    navMenu.classList.remove('show-menu')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
+skillsHeader.forEach((el) => {
+    el.addEventListener("click", toggleSkills);
+});

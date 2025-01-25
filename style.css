@@ -355,11 +355,122 @@ img {
 
 .home_description{
     margin-bottom: var(--mb-2);
-    
-    
 }
 
-    
-    
-    
+.about_img{
+    width: 200px;
+    border-radius: 50%;
+    justify-self: center;
+    align-items: center;
+}
 
+.about_description{
+    margin-bottom: var(--mb-2-5);
+    align-items: center;
+    justify-content: center;
+}
+.about_buttons{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: var(--mb-2);
+}
+
+.skills_content{
+    display: grid;
+    gap: 1.5rem;
+}
+.skills_container{
+    grid-template-columns: repeat(2, 1fr);
+}
+.skills_header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: var(--mb-2-5);
+    grid-column: 1/-1;
+    cursor: pointer;
+}
+.skills_icon,
+.skills_arrow{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+.skills_icon{
+    margin-right: var(--mb-0-75);
+}
+.skills_arrow{
+    transition: .3s;
+}
+.skills_header:hover .skills_arrow{
+    transform: rotate(180deg);
+}
+.skills_title{
+    font-size: var(--h2-font-size);
+    
+}
+.skills_subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+.skills_arrow{
+    margin-left: auto;
+    transition: .4s;
+}
+.skills_titles{
+    display: flex;
+    justify-content: space-between;
+
+    gap: 1.5rem;
+}
+.skills_name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+}
+.skills_bar,
+.skills_percentage{
+    height: 5px;
+    border-radius: .25rem;
+}
+.skills_bar{
+    background-color: var(--first-color-lighter);
+}
+.skills_percentage{
+    background-color: var(--first-color);
+    display: block;
+}
+.skills_html{
+    width: 90%;
+}
+.skills_css{
+    width: 80%;
+}
+.skills_js{
+    width: 90%;
+}
+.skills_react{
+    width: 60%;
+}
+.skills_node{
+    width: 80%;
+}
+.skills_express{
+    width: 80%;
+}
+.skills_next{
+    width: 20%;
+}
+.skills_mongo{
+    width: 80%;
+}
+.skills_close .skills_list{
+    height: 0;
+    overflow: hidden;
+}
+.skills_open .skills_list{
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
+.skills_open .skills_arrow{
+    transform: rotate(-180deg);
+}

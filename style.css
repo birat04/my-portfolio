@@ -354,6 +354,8 @@ img {
 }
 
 .home_description{
+    margin-bottom: var(--mb-2);
+    
     
 }
 

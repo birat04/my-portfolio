@@ -67,10 +67,6 @@ body.dark-theme{
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
-    
-   
-  
-   
 
 .nav_btns{
     display: flex;
@@ -720,15 +716,20 @@ img {
     margin-bottom: var(--mb-0-25);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 .footer_subtitle{
     font-size: var(--small-font-size);
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
+.footer_title, 
+.footer_subtitle {
+    text-align: left;
+    justify-content: flex-start; 
+}
+    
 .footer_description{
     margin-bottom: var(--mb-1-5);
     
